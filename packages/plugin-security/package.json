@@ -1,0 +1,36 @@
+{
+    "name": "@ai16z/plugin-security",
+    "version": "0.1.0",
+    "description": "Security analysis plugin for Eliza framework",
+    "main": "dist/index.js",
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup --format esm --dts",
+        "dev": "tsup --format esm --dts --watch",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@ai16z/eliza": "workspace:*",
+        "@metaplex-foundation/js": "^0.20.1",
+        "@metaplex-foundation/mpl-token-metadata": "^3.3.0",
+        "@solana/web3.js": "^1.95.8",
+        "axios": "1.7.8",
+        "pumpdotfun-sdk": "^1.3.2"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.10",
+        "@types/node": "^20.17.9",
+        "dotenv": "^16.3.1",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.1",
+        "tsup": "^8.3.5",
+        "typescript": "^5.3.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

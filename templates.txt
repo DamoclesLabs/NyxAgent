@@ -1,0 +1,39 @@
+# Message Handler Template
+# Task: Generate a response for {{agentName}}
+
+Input: {{message}}
+Thread: {{thread}}
+
+Rules:
+1. For pump tokens: Use ANALYZE_TOKEN_SECURITY action
+2. For other tokens: Explain current limitations
+3. For general questions: Provide security advice
+
+Response format:
+{
+  "text": "[Response text]",
+  "action": "[Action name if needed]",
+  "tokenAddress": "[Token address if analyzing]"
+}
+
+# Should Respond Template
+# Task: Determine if {{agentName}} should respond to this message.
+
+Message: {{message}}
+Thread: {{thread}}
+
+Rules:
+1. RESPOND if:
+   - Message mentions @NyxSec
+   - Contains security questions
+   - Requests token analysis
+   - Reports scams/threats
+2. IGNORE if:
+   - Message is irrelevant/spam
+   - From self
+   - Already contains an action
+3. STOP if:
+   - Conversation is concluded
+   - User requests to stop
+
+Decision: [RESPOND/IGNORE/STOP]
