@@ -14,4 +14,4 @@
 
 ## Defined in
 
-packages/core/src/parsing.ts:13
+[packages/core/src/parsing.ts:15](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/parsing.ts#L15)

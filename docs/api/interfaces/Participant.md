@@ -14,7 +14,7 @@ Unique identifier
 
 #### Defined in
 
-packages/core/src/types.ts:520
+[packages/core/src/types.ts:520](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L520)
 
 ***
 
@@ -26,4 +26,4 @@ Associated account
 
 #### Defined in
 
-packages/core/src/types.ts:523
+[packages/core/src/types.ts:523](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L523)

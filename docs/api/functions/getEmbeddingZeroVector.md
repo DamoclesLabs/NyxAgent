@@ -10,4 +10,4 @@
 
 ## Defined in
 
-packages/core/src/embedding.ts:118
+[packages/core/src/embedding.ts:118](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/embedding.ts#L118)

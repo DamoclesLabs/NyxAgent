@@ -52,4 +52,4 @@
 
 ## Defined in
 
-packages/core/src/knowledge.ts:150
+[packages/core/src/knowledge.ts:150](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/knowledge.ts#L150)

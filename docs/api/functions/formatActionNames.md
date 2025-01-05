@@ -20,4 +20,4 @@ A comma-separated string of action names.
 
 ## Defined in
 
-packages/core/src/actions.ts:61
+[packages/core/src/actions.ts:61](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/actions.ts#L61)

@@ -28,4 +28,4 @@ If the API request fails
 
 ## Defined in
 
-packages/core/src/embedding.ts:145
+[packages/core/src/embedding.ts:145](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/embedding.ts#L145)

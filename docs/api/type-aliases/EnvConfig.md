@@ -8,4 +8,4 @@ Type inference
 
 ## Defined in
 
-packages/core/src/environment.ts:23
+[packages/core/src/environment.ts:23](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/environment.ts#L23)

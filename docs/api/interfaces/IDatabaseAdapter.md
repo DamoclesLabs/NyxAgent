@@ -14,7 +14,7 @@ Database instance
 
 #### Defined in
 
-packages/core/src/types.ts:741
+[packages/core/src/types.ts:741](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L741)
 
 ## Methods
 
@@ -30,7 +30,7 @@ Optional initialization
 
 #### Defined in
 
-packages/core/src/types.ts:744
+[packages/core/src/types.ts:744](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L744)
 
 ***
 
@@ -46,7 +46,7 @@ Close database connection
 
 #### Defined in
 
-packages/core/src/types.ts:747
+[packages/core/src/types.ts:747](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L747)
 
 ***
 
@@ -66,7 +66,7 @@ Get account by ID
 
 #### Defined in
 
-packages/core/src/types.ts:750
+[packages/core/src/types.ts:750](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L750)
 
 ***
 
@@ -86,7 +86,7 @@ Create new account
 
 #### Defined in
 
-packages/core/src/types.ts:753
+[packages/core/src/types.ts:753](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L753)
 
 ***
 
@@ -120,7 +120,7 @@ Get memories matching criteria
 
 #### Defined in
 
-packages/core/src/types.ts:756
+[packages/core/src/types.ts:756](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L756)
 
 ***
 
@@ -138,7 +138,7 @@ packages/core/src/types.ts:756
 
 #### Defined in
 
-packages/core/src/types.ts:766
+[packages/core/src/types.ts:766](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L766)
 
 ***
 
@@ -162,7 +162,7 @@ packages/core/src/types.ts:766
 
 #### Defined in
 
-packages/core/src/types.ts:768
+[packages/core/src/types.ts:768](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L768)
 
 ***
 
@@ -192,7 +192,7 @@ packages/core/src/types.ts:768
 
 #### Defined in
 
-packages/core/src/types.ts:774
+[packages/core/src/types.ts:774](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L774)
 
 ***
 
@@ -218,7 +218,7 @@ packages/core/src/types.ts:774
 
 #### Defined in
 
-packages/core/src/types.ts:783
+[packages/core/src/types.ts:783](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L783)
 
 ***
 
@@ -238,7 +238,7 @@ packages/core/src/types.ts:783
 
 #### Defined in
 
-packages/core/src/types.ts:790
+[packages/core/src/types.ts:790](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L790)
 
 ***
 
@@ -270,7 +270,7 @@ packages/core/src/types.ts:790
 
 #### Defined in
 
-packages/core/src/types.ts:792
+[packages/core/src/types.ts:792](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L792)
 
 ***
 
@@ -292,7 +292,7 @@ packages/core/src/types.ts:792
 
 #### Defined in
 
-packages/core/src/types.ts:802
+[packages/core/src/types.ts:802](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L802)
 
 ***
 
@@ -324,7 +324,7 @@ packages/core/src/types.ts:802
 
 #### Defined in
 
-packages/core/src/types.ts:807
+[packages/core/src/types.ts:807](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L807)
 
 ***
 
@@ -346,7 +346,7 @@ packages/core/src/types.ts:807
 
 #### Defined in
 
-packages/core/src/types.ts:819
+[packages/core/src/types.ts:819](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L819)
 
 ***
 
@@ -366,7 +366,7 @@ packages/core/src/types.ts:819
 
 #### Defined in
 
-packages/core/src/types.ts:825
+[packages/core/src/types.ts:825](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L825)
 
 ***
 
@@ -386,7 +386,7 @@ packages/core/src/types.ts:825
 
 #### Defined in
 
-packages/core/src/types.ts:827
+[packages/core/src/types.ts:827](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L827)
 
 ***
 
@@ -408,7 +408,7 @@ packages/core/src/types.ts:827
 
 #### Defined in
 
-packages/core/src/types.ts:829
+[packages/core/src/types.ts:829](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L829)
 
 ***
 
@@ -436,7 +436,7 @@ packages/core/src/types.ts:829
 
 #### Defined in
 
-packages/core/src/types.ts:835
+[packages/core/src/types.ts:835](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L835)
 
 ***
 
@@ -454,7 +454,7 @@ packages/core/src/types.ts:835
 
 #### Defined in
 
-packages/core/src/types.ts:843
+[packages/core/src/types.ts:843](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L843)
 
 ***
 
@@ -472,7 +472,7 @@ packages/core/src/types.ts:843
 
 #### Defined in
 
-packages/core/src/types.ts:845
+[packages/core/src/types.ts:845](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L845)
 
 ***
 
@@ -490,7 +490,7 @@ packages/core/src/types.ts:845
 
 #### Defined in
 
-packages/core/src/types.ts:847
+[packages/core/src/types.ts:847](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L847)
 
 ***
 
@@ -508,7 +508,7 @@ packages/core/src/types.ts:847
 
 #### Defined in
 
-packages/core/src/types.ts:849
+[packages/core/src/types.ts:849](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L849)
 
 ***
 
@@ -526,7 +526,7 @@ packages/core/src/types.ts:849
 
 #### Defined in
 
-packages/core/src/types.ts:851
+[packages/core/src/types.ts:851](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L851)
 
 ***
 
@@ -544,7 +544,7 @@ packages/core/src/types.ts:851
 
 #### Defined in
 
-packages/core/src/types.ts:853
+[packages/core/src/types.ts:853](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L853)
 
 ***
 
@@ -562,7 +562,7 @@ packages/core/src/types.ts:853
 
 #### Defined in
 
-packages/core/src/types.ts:855
+[packages/core/src/types.ts:855](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L855)
 
 ***
 
@@ -580,7 +580,7 @@ packages/core/src/types.ts:855
 
 #### Defined in
 
-packages/core/src/types.ts:857
+[packages/core/src/types.ts:857](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L857)
 
 ***
 
@@ -598,7 +598,7 @@ packages/core/src/types.ts:857
 
 #### Defined in
 
-packages/core/src/types.ts:859
+[packages/core/src/types.ts:859](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L859)
 
 ***
 
@@ -618,7 +618,7 @@ packages/core/src/types.ts:859
 
 #### Defined in
 
-packages/core/src/types.ts:861
+[packages/core/src/types.ts:861](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L861)
 
 ***
 
@@ -638,7 +638,7 @@ packages/core/src/types.ts:861
 
 #### Defined in
 
-packages/core/src/types.ts:863
+[packages/core/src/types.ts:863](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L863)
 
 ***
 
@@ -656,7 +656,7 @@ packages/core/src/types.ts:863
 
 #### Defined in
 
-packages/core/src/types.ts:865
+[packages/core/src/types.ts:865](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L865)
 
 ***
 
@@ -674,7 +674,7 @@ packages/core/src/types.ts:865
 
 #### Defined in
 
-packages/core/src/types.ts:867
+[packages/core/src/types.ts:867](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L867)
 
 ***
 
@@ -694,7 +694,7 @@ packages/core/src/types.ts:867
 
 #### Defined in
 
-packages/core/src/types.ts:869
+[packages/core/src/types.ts:869](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L869)
 
 ***
 
@@ -716,7 +716,7 @@ packages/core/src/types.ts:869
 
 #### Defined in
 
-packages/core/src/types.ts:874
+[packages/core/src/types.ts:874](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L874)
 
 ***
 
@@ -738,7 +738,7 @@ packages/core/src/types.ts:874
 
 #### Defined in
 
-packages/core/src/types.ts:880
+[packages/core/src/types.ts:880](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L880)
 
 ***
 
@@ -760,7 +760,7 @@ packages/core/src/types.ts:880
 
 #### Defined in
 
-packages/core/src/types.ts:882
+[packages/core/src/types.ts:882](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L882)
 
 ***
 
@@ -780,4 +780,4 @@ packages/core/src/types.ts:882
 
 #### Defined in
 
-packages/core/src/types.ts:887
+[packages/core/src/types.ts:887](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L887)

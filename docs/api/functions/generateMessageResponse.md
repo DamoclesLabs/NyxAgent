@@ -28,4 +28,4 @@ The completed message.
 
 ## Defined in
 
-packages/core/src/generation.ts:759
+[packages/core/src/generation.ts:772](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L772)

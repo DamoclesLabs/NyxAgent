@@ -20,4 +20,4 @@ A string that summarizes the descriptions for each evaluator example, formatted 
 
 ## Defined in
 
-packages/core/src/evaluators.ts:110
+[packages/core/src/evaluators.ts:110](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/evaluators.ts#L110)

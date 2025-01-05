@@ -18,4 +18,4 @@ Callback function type for handlers
 
 ## Defined in
 
-packages/core/src/types.ts:377
+[packages/core/src/types.ts:377](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L377)

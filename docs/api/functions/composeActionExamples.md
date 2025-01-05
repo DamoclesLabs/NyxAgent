@@ -25,4 +25,4 @@ A string containing formatted examples of conversations.
 
 ## Defined in
 
-packages/core/src/actions.ts:11
+[packages/core/src/actions.ts:11](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/actions.ts#L11)

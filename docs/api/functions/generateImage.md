@@ -48,4 +48,4 @@
 
 ## Defined in
 
-packages/core/src/generation.ts:799
+[packages/core/src/generation.ts:812](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L812)

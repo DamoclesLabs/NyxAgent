@@ -46,4 +46,4 @@ Text content
 
 ## Defined in
 
-packages/core/src/types.ts:540
+[packages/core/src/types.ts:540](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L540)

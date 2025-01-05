@@ -18,4 +18,4 @@
 
 ## Defined in
 
-packages/core/src/relationships.ts:33
+[packages/core/src/relationships.ts:33](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/relationships.ts#L33)

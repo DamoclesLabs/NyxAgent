@@ -26,4 +26,4 @@ Data retrieval function
 
 #### Defined in
 
-packages/core/src/types.ts:459
+[packages/core/src/types.ts:459](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L459)

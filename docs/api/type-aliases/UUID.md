@@ -8,4 +8,4 @@ Represents a UUID string in the format "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 ## Defined in
 
-packages/core/src/types.ts:6
+[packages/core/src/types.ts:6](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L6)

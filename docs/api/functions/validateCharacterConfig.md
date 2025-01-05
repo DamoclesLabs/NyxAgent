@@ -16,4 +16,4 @@ Validation function
 
 ## Defined in
 
-packages/core/src/environment.ts:133
+[packages/core/src/environment.ts:133](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/environment.ts#L133)

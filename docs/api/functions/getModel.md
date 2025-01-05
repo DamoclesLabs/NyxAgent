@@ -16,4 +16,4 @@
 
 ## Defined in
 
-packages/core/src/models.ts:389
+[packages/core/src/models.ts:389](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/models.ts#L389)

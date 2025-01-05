@@ -28,4 +28,4 @@ Promise resolving to a boolean value parsed from the model's response
 
 ## Defined in
 
-packages/core/src/generation.ts:584
+[packages/core/src/generation.ts:597](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L597)

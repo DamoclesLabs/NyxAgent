@@ -20,4 +20,4 @@ Configuration options specific to the provider.
 
 ## Defined in
 
-packages/core/src/generation.ts:1173
+[packages/core/src/generation.ts:1186](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1186)

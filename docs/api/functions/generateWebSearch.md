@@ -16,4 +16,4 @@
 
 ## Defined in
 
-packages/core/src/generation.ts:1022
+[packages/core/src/generation.ts:1035](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1035)

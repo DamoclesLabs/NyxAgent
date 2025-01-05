@@ -32,4 +32,4 @@ The completed message.
 
 ## Defined in
 
-packages/core/src/generation.ts:51
+[packages/core/src/generation.ts:51](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L51)

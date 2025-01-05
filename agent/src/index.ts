@@ -6,6 +6,7 @@ import { DiscordClientInterface } from "@ai16z/client-discord";
 import { TelegramClientInterface } from "@ai16z/client-telegram";
 import { TwitterClientInterface } from "@ai16z/client-twitter";
 import { FarcasterAgentClient } from "@ai16z/client-farcaster";
+import { MonitorService } from "@ai16z/plugin-monitor";
 import {
     AgentRuntime,
     CacheManager,
@@ -454,6 +455,9 @@ async function startAgent(character: Character, directClient) {
         await runtime.initialize();
 
         const clients = await initializeClients(character, runtime);
+
+        const monitorService = new MonitorService(clients[0] as any);
+        await monitorService.initialize(runtime);
 
         directClient.registerAgent(runtime);
 

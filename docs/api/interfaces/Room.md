@@ -14,7 +14,7 @@ Unique identifier
 
 #### Defined in
 
-packages/core/src/types.ts:531
+[packages/core/src/types.ts:531](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L531)
 
 ***
 
@@ -26,4 +26,4 @@ Room participants
 
 #### Defined in
 
-packages/core/src/types.ts:534
+[packages/core/src/types.ts:534](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L534)

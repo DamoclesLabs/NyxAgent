@@ -28,4 +28,4 @@ Promise resolving to an array of strings parsed from the model's response
 
 ## Defined in
 
-packages/core/src/generation.ts:639
+[packages/core/src/generation.ts:652](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L652)

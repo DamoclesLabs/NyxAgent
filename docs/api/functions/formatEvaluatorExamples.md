@@ -20,4 +20,4 @@ A string that presents each evaluator example in a structured format, including 
 
 ## Defined in
 
-packages/core/src/evaluators.ts:55
+[packages/core/src/evaluators.ts:55](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/evaluators.ts#L55)

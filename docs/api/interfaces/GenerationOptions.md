@@ -12,7 +12,7 @@ Configuration options for generating objects with a model.
 
 #### Defined in
 
-packages/core/src/generation.ts:1058
+[packages/core/src/generation.ts:1071](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1071)
 
 ***
 
@@ -22,7 +22,7 @@ packages/core/src/generation.ts:1058
 
 #### Defined in
 
-packages/core/src/generation.ts:1059
+[packages/core/src/generation.ts:1072](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1072)
 
 ***
 
@@ -32,7 +32,7 @@ packages/core/src/generation.ts:1059
 
 #### Defined in
 
-packages/core/src/generation.ts:1060
+[packages/core/src/generation.ts:1073](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1073)
 
 ***
 
@@ -42,7 +42,7 @@ packages/core/src/generation.ts:1060
 
 #### Defined in
 
-packages/core/src/generation.ts:1061
+[packages/core/src/generation.ts:1074](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1074)
 
 ***
 
@@ -52,7 +52,7 @@ packages/core/src/generation.ts:1061
 
 #### Defined in
 
-packages/core/src/generation.ts:1062
+[packages/core/src/generation.ts:1075](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1075)
 
 ***
 
@@ -62,7 +62,7 @@ packages/core/src/generation.ts:1062
 
 #### Defined in
 
-packages/core/src/generation.ts:1063
+[packages/core/src/generation.ts:1076](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1076)
 
 ***
 
@@ -72,7 +72,7 @@ packages/core/src/generation.ts:1063
 
 #### Defined in
 
-packages/core/src/generation.ts:1064
+[packages/core/src/generation.ts:1077](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1077)
 
 ***
 
@@ -82,7 +82,7 @@ packages/core/src/generation.ts:1064
 
 #### Defined in
 
-packages/core/src/generation.ts:1065
+[packages/core/src/generation.ts:1078](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1078)
 
 ***
 
@@ -92,4 +92,4 @@ packages/core/src/generation.ts:1065
 
 #### Defined in
 
-packages/core/src/generation.ts:1066
+[packages/core/src/generation.ts:1079](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1079)

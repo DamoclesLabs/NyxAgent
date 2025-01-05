@@ -12,4 +12,4 @@
 
 ## Defined in
 
-packages/core/src/types.ts:945
+[packages/core/src/types.ts:945](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L945)

@@ -6,4 +6,4 @@
 
 ## Defined in
 
-packages/core/src/parsing.ts:41
+[packages/core/src/parsing.ts:61](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/parsing.ts#L61)

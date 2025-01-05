@@ -20,4 +20,4 @@
 
 ## Defined in
 
-packages/core/src/generation.ts:711
+[packages/core/src/generation.ts:724](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L724)

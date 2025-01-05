@@ -14,4 +14,4 @@
 
 ## Defined in
 
-packages/core/src/messages.ts:94
+[packages/core/src/messages.ts:94](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/messages.ts#L94)

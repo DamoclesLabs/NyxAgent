@@ -23,4 +23,4 @@ An array parsed from the JSON string if successful; otherwise, null.
 
 ## Defined in
 
-packages/core/src/parsing.ts:60
+[packages/core/src/parsing.ts:80](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/parsing.ts#L80)

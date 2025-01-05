@@ -24,7 +24,7 @@
 
 #### Defined in
 
-packages/core/src/types.ts:969
+[packages/core/src/types.ts:969](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L969)
 
 ## Methods
 
@@ -48,7 +48,7 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-packages/core/src/types.ts:974
+[packages/core/src/types.ts:974](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L974)
 
 ***
 
@@ -62,7 +62,7 @@ packages/core/src/types.ts:974
 
 #### Defined in
 
-packages/core/src/types.ts:1112
+[packages/core/src/types.ts:1112](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L1112)
 
 ***
 
@@ -82,4 +82,4 @@ packages/core/src/types.ts:1112
 
 #### Defined in
 
-packages/core/src/types.ts:1113
+[packages/core/src/types.ts:1113](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L1113)

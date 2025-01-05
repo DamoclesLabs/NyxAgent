@@ -24,4 +24,4 @@ Configuration options for generating objects.
 
 ## Defined in
 
-packages/core/src/generation.ts:1088
+[packages/core/src/generation.ts:1101](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/generation.ts#L1101)

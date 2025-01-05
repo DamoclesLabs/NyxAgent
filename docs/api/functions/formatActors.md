@@ -22,4 +22,4 @@ string
 
 ## Defined in
 
-packages/core/src/messages.ts:45
+[packages/core/src/messages.ts:45](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/messages.ts#L45)

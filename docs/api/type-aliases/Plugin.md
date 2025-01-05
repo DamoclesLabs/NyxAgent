@@ -52,4 +52,4 @@ Optional clients
 
 ## Defined in
 
-packages/core/src/types.ts:574
+[packages/core/src/types.ts:574](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/types.ts#L574)

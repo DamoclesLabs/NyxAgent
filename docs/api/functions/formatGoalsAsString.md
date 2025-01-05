@@ -16,4 +16,4 @@
 
 ## Defined in
 
-packages/core/src/goals.ts:30
+[packages/core/src/goals.ts:30](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/goals.ts#L30)

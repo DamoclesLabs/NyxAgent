@@ -44,4 +44,4 @@ const context = composeContext({ state, template });
 
 ## Defined in
 
-packages/core/src/context.ts:24
+[packages/core/src/context.ts:24](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/context.ts#L24)

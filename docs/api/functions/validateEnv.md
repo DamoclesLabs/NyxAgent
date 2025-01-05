@@ -12,4 +12,4 @@ Validation function
 
 ## Defined in
 
-packages/core/src/environment.ts:26
+[packages/core/src/environment.ts:26](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/environment.ts#L26)

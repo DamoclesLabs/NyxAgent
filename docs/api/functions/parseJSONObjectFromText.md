@@ -24,4 +24,4 @@ An object parsed from the JSON string if successful; otherwise, null or the resu
 
 ## Defined in
 
-packages/core/src/parsing.ts:103
+[packages/core/src/parsing.ts:123](https://github.com/DamoclesLabs/NyxAgent/blob/main/packages/core/src/parsing.ts#L123)
