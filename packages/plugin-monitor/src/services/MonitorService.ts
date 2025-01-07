@@ -62,6 +62,8 @@ export class MonitorService extends Service {
   private readonly HOURLY_TWEET_LIMIT = this.HOURLY_TOKEN_LIMIT * this.TWEETS_PER_TOKEN;
   private isProcessing = false;
   private lastResetTime = Date.now();
+  private isFirstRun = true;
+  private readonly MIN_TOKEN_PRICE = 0.0001;
 
   constructor(twitterManagerOrRuntime?: TwitterManager | IAgentRuntime) {
     super();
@@ -233,16 +235,20 @@ export class MonitorService extends Service {
       console.log('交易签名:', data.signature);
       console.log('时间戳:', new Date(data.timestamp).toLocaleString());
 
-      // 将新代币添加到队列
-      this.tokenQueue.push(data);
-
-      // 如果没有在处理队列，开始处理
-      if (!this.isProcessing) {
-        this.processQueue();
+      // 如果是首次运行，直接处理代币
+      if (this.isFirstRun) {
+        await this.processToken(data);
+        this.tweetCount += this.TWEETS_PER_TOKEN;
+      } else {
+        // 否则将代币添加到队列
+        this.tokenQueue.push(data);
+        // 如果没有在处理队列，开始处理
+        if (!this.isProcessing) {
+          this.processQueue();
+        }
       }
     } catch (error) {
       console.error('处理新代币事件失败:', error);
-      // 即使分析失败，也发送基本事件
       const basicEvent: TokenLaunchEvent = {
         tokenAddress: data.tokenAddress,
         launchTimestamp: data.timestamp,
@@ -255,6 +261,7 @@ export class MonitorService extends Service {
   private async processQueue() {
     if (this.isProcessing) return;
     this.isProcessing = true;
+    this.isFirstRun = false;
 
     try {
       while (true) {
@@ -278,6 +285,15 @@ export class MonitorService extends Service {
         if (!tokenData) {
           console.log('队列为空，等待新代币...');
           break;
+        }
+
+        // 检查代币价格
+        const tokenPrice = await this.tokenAnalyzer!.getTokenPrice(tokenData.tokenAddress);
+        console.log('代币价格:', tokenPrice ? `$${tokenPrice}` : '未知');
+
+        if (!tokenPrice || tokenPrice < this.MIN_TOKEN_PRICE) {
+          console.log(`代币价格 ($${tokenPrice}) 低于最小阈值 ($${this.MIN_TOKEN_PRICE})，跳过处理`);
+          continue;
         }
 
         // 处理代币
@@ -311,51 +327,55 @@ export class MonitorService extends Service {
     solAmount: number;
     tokenAmount: number;
   }) {
-    console.log('\n=== 开始处理代币 ===');
-    console.log('代币地址:', data.tokenAddress);
+    try {
+      console.log('\n=== 开始处理代币 ===');
+      console.log('代币地址:', data.tokenAddress);
 
-    // 收集时间线数据
-    const timelineData = await this.timelineAnalyzer!.collectData(
-      data.tokenAddress,
-      data.timestamp
-    );
+      // 收集时间线数据
+      const timelineData = await this.timelineAnalyzer!.collectData(
+        data.tokenAddress,
+        data.timestamp
+      );
 
-    // 分析代币持仓
-    const tokenAnalysis = await this.tokenAnalyzer!.analyzeToken(
-      data.tokenAddress,
-      timelineData.creator
-    );
+      // 分析代币持仓
+      const tokenAnalysis = await this.tokenAnalyzer!.analyzeToken(
+        data.tokenAddress,
+        timelineData.creator
+      );
 
-    // AI 风险分析
-    const tokenInfo = {
-      tokenAddress: data.tokenAddress,
-      tokenName: timelineData.tokenName,
-      creator: timelineData.creator,
-      createdAt: timelineData.createdAt,
-      launchedAt: data.timestamp,
-      creatorTokens: timelineData.creatorTokens,
-      creatorWalletAge: timelineData.creatorWalletAge,
-      creatorHolding: tokenAnalysis.creatorHolding
-    };
+      // AI 风险分析
+      const tokenInfo = {
+        tokenAddress: data.tokenAddress,
+        tokenName: timelineData.tokenName,
+        creator: timelineData.creator,
+        createdAt: timelineData.createdAt,
+        launchedAt: data.timestamp,
+        creatorTokens: timelineData.creatorTokens,
+        creatorWalletAge: timelineData.creatorWalletAge,
+        creatorHolding: tokenAnalysis.creatorHolding
+      };
 
-    const riskAnalysis = await this.llmService!.analyzeTokenRisk(tokenInfo);
-    const tweets = riskAnalysis.split('\n\n');
-    await this.sendTweets(tweets);
+      const riskAnalysis = await this.llmService!.analyzeTokenRisk(tokenInfo);
+      const tweets = riskAnalysis.split('\n\n');
+      await this.sendTweets(tweets);
 
-    // 发出完整的代币发布事件
-    const event: TokenLaunchEvent = {
-      tokenAddress: data.tokenAddress,
-      tokenName: timelineData.tokenName,
-      creator: timelineData.creator,
-      launchTimestamp: data.timestamp,
-      createdAt: timelineData.createdAt,
-      transaction: data.signature,
-      analysis: riskAnalysis,
-      tweets
-    };
+      // 发出完整的代币发布事件
+      const event: TokenLaunchEvent = {
+        tokenAddress: data.tokenAddress,
+        tokenName: timelineData.tokenName,
+        creator: timelineData.creator,
+        launchTimestamp: data.timestamp,
+        createdAt: timelineData.createdAt,
+        transaction: data.signature,
+        analysis: riskAnalysis,
+        tweets
+      };
 
-    this.eventEmitter.emit('tokenLaunched', event);
-    console.log('=== 代币处理完成 ===\n');
+      this.eventEmitter.emit('tokenLaunched', event);
+      console.log('=== 代币处理完成 ===\n');
+    } catch (error) {
+      console.error('处理代币时发生错误:', error);
+    }
   }
 
   protected getRuntime(): IAgentRuntime | null {

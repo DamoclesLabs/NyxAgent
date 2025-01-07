@@ -1,5 +1,6 @@
 import { Connection, PublicKey } from '@solana/web3.js';
 import { getAssociatedTokenAddress, getAccount, TokenAccountNotFoundError } from '@solana/spl-token';
+import axios from 'axios';
 
 interface TokenHolding {
   tokenAddress: string;
@@ -18,6 +19,7 @@ export class TokenAnalyzer {
       timestamp: number;
     }>;
     private CACHE_TTL = 30 * 1000; // 30秒缓存
+    private jupiterPriceEndpoint = 'https://api.jup.ag/price/v2';
 
     constructor(connection: Connection) {
       this.connection = connection;
@@ -215,6 +217,16 @@ export class TokenAnalyzer {
             balance: 0
           }
         };
+      }
+    }
+
+    async getTokenPrice(tokenAddress: string): Promise<number | null> {
+      try {
+        const response = await axios.get(`${this.jupiterPriceEndpoint}?ids=${tokenAddress}&showExtraInfo=true`);
+        return response.data?.data?.[tokenAddress]?.price || null;
+      } catch (error) {
+        console.error('Failed to get token price from Jupiter:', error);
+        return null;
       }
     }
 }
