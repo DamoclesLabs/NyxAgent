@@ -161,6 +161,17 @@ export class SolanaMonitor {
         return;
       }
 
+      // 获取交易详情以获取实际时间戳
+      const tx = await this.connection.getTransaction(signature, {
+        maxSupportedTransactionVersion: 0,
+        commitment: 'confirmed'
+      });
+
+      if (!tx || !tx.blockTime) {
+        console.log('Could not get transaction timestamp');
+        return;
+      }
+
       // 提取初始化参数
       const initLog = logs.logs.find((log: string) =>
         log.includes('initialize2: InitializeInstruction2')
@@ -169,11 +180,11 @@ export class SolanaMonitor {
       let solAmount = 0;
       let tokenAmount = 0;
 
-      // 发出新代币事件
+      // 发出新代币事件，使用实际的区块时间戳
       this.eventEmitter.emit('newToken', {
         tokenAddress,
         signature,
-        timestamp: Date.now(),
+        timestamp: tx.blockTime * 1000, // 转换为毫秒
         solAmount,
         tokenAmount
       });

@@ -80,7 +80,10 @@ Please generate a 4-tweet thread in the following format:
 
 🚨 Token Monitor Alert (1/4)
 Token Name: $${tokenInfo.tokenName}
-Contract Address: ${tokenInfo.tokenAddress}
+Contract Address:
+
+ ${tokenInfo.tokenAddress}
+
 Creation Time: ${creationDate}
 Raydium Launch: ${launchDate}
 Time Difference: ${timeDiff.toFixed(2)} hours

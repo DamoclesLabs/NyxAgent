@@ -178,7 +178,7 @@ export class MonitorService extends Service {
   private async sendTweets(tweets: string[]): Promise<void> {
     try {
       if (!this.twitterClient) {
-        console.log('Twitter 客户端未初始化，跳过发送推文');
+        console.log('Twitter client not initialized, skipping tweets');
         return;
       }
 
@@ -191,34 +191,49 @@ export class MonitorService extends Service {
 
         for (const chunk of tweetChunks) {
           try {
+            // 添加随机延迟 (3-7秒)
+            const delay = Math.floor(Math.random() * (7000 - 3000 + 1)) + 3000;
+            await new Promise(resolve => setTimeout(resolve, delay));
+
             // 使用 twitterClient.post 来发送推文
             const result = await this.twitterClient.client.requestQueue.add(
               async () => await this.twitterClient!.client.twitterClient.sendTweet(chunk.trim(), previousTweetId)
             );
             const body = await result.json();
             if (!body?.data?.create_tweet?.tweet_results?.result) {
-              console.error('发送推文失败，响应无效:', body);
+              console.error('Failed to send tweet, invalid response:', body);
+
+              // 检查是否是每日限制错误 (185)
+              if (body?.errors?.[0]?.code === 185) {
+                console.log('Daily tweet limit reached, waiting for 1 hour before next attempt...');
+                await this.waitUntilNextHour();
+                // 重试当前推文
+                continue;
+              }
+
+              // 如果是其他限制，等待较短时间
+              if (body?.errors?.[0]?.code === 226) {
+                console.log('Rate limit detected, waiting before next attempt...');
+                const longDelay = Math.floor(Math.random() * (30000 - 15000 + 1)) + 15000;
+                await new Promise(resolve => setTimeout(resolve, longDelay));
+              }
               continue;
             }
             const tweetResult = body.data.create_tweet.tweet_results.result;
 
-            // 添加调试日志
-
             previousTweetId = tweetResult.rest_id;
-
-            // 等待一小段时间再发送下一条，避免触发限制
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            console.log('推文发送成功:', chunk.slice(0, 50) + '...');
+            console.log('Tweet sent successfully:', chunk.slice(0, 50) + '...');
           } catch (error) {
-            console.error('发送推文失败:', error);
-            // 继续发送下一条推文
+            console.error('Failed to send tweet:', error);
+            // 如果发送失败，等待较长时间后继续
+            await new Promise(resolve => setTimeout(resolve, 10000));
             continue;
           }
         }
       }
-      console.log('所有推文发送完成');
+      console.log('All tweets sent successfully');
     } catch (error) {
-      console.error('发送推文过程中发生错误:', error);
+      console.error('Error during tweet sending process:', error);
     }
   }
 
@@ -356,7 +371,8 @@ export class MonitorService extends Service {
       };
 
       const riskAnalysis = await this.llmService!.analyzeTokenRisk(tokenInfo);
-      const tweets = riskAnalysis.split('\n\n');
+      // 不再使用简单的分割，而是按照推文编号分割
+      const tweets = riskAnalysis.split(/(?=🚨|👨‍💻|📜|💡)/g).map(tweet => tweet.trim());
       await this.sendTweets(tweets);
 
       // 发出完整的代币发布事件
